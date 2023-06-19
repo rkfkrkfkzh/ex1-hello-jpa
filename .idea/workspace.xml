@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="프로젝트 설정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+    <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="JPA 애플리케이션 개발">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpa-basic/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686898303733</updated>
       <workItem from="1686898304778" duration="1628000" />
-      <workItem from="1687147617451" duration="5704000" />
+      <workItem from="1687147617451" duration="6478000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1686899278760</created>
@@ -93,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686899278760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JPA 애플리케이션 개발">
+      <created>1687158542277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687158542277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="프로젝트 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 설정" />
+    <MESSAGE value="JPA 애플리케이션 개발" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA 애플리케이션 개발" />
   </component>
 </project>
