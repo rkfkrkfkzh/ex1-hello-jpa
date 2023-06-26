@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f48998-baca-4509-a4d3-422b32a3b32b" name="New changelist" comment="기본키 매핑 GenerationType.SEQUENCE 사용, IDENTITY 사용시 persist 영속시에 &#10;커밋전에 insert 쿼리 나감" />
-    <list id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="기본키 매핑 @GenerationType.SEQUENCE 사용 , IDENTITY 사용시 persist영속시 insert쿼리 나감" />
+    <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="기본키 매핑 @GenerationType.SEQUENCE 사용 , IDENTITY 사용시 persist영속시 insert쿼리 나감">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +89,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="" />
-      <changelist id="04f48998-baca-4509-a4d3-422b32a3b32b" name="New changelist" comment="" />
       <created>1686898303733</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -97,6 +100,8 @@
       <workItem from="1687413509586" duration="3901000" />
       <workItem from="1687474229892" duration="7065000" />
       <workItem from="1687506622511" duration="122000" />
+      <workItem from="1687506800021" duration="150000" />
+      <workItem from="1687758059656" duration="3508000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1686899278760</created>
@@ -140,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687506722078</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="기본키 매핑 GenerationType.SEQUENCE 사용, IDENTITY 사용시 persist 영속시에 &#10;커밋전에 insert 쿼리 나감">
+      <created>1687506887619</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687506887619</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

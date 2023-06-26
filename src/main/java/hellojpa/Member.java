@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
-@SequenceGenerator(name = "member_seq_generator",sequenceName = "member_seq",initialValue = 1,allocationSize = 1)
+@SequenceGenerator(name = "member_seq_generator", sequenceName = "member_seq", initialValue = 1, allocationSize = 50)
 public class Member {
 
     @Id
