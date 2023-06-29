@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="단방향 연관관계">
+    <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="양방향 연관관계와 연관관계의 주인 - 기본">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +107,7 @@
       <workItem from="1687842564316" duration="551000" />
       <workItem from="1687930694451" duration="1633000" />
       <workItem from="1687935157199" duration="3407000" />
-      <workItem from="1688015410213" duration="2098000" />
+      <workItem from="1688015410213" duration="7137000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1686899278760</created>
@@ -171,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687938837581</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="양방향 연관관계와 연관관계의 주인 - 기본">
+      <created>1688017537416</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688017537416</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +204,7 @@
     <MESSAGE value="기본키 매핑 GenerationType.SEQUENCE 사용, IDENTITY 사용시 persist 영속시에 &#10;커밋전에 insert 쿼리 나감" />
     <MESSAGE value="@GenerationType.SEQUENCE 전략" />
     <MESSAGE value="단방향 연관관계" />
-    <option name="LAST_COMMIT_MESSAGE" value="단방향 연관관계" />
+    <MESSAGE value="양방향 연관관계와 연관관계의 주인 - 기본" />
+    <option name="LAST_COMMIT_MESSAGE" value="양방향 연관관계와 연관관계의 주인 - 기본" />
   </component>
 </project>
