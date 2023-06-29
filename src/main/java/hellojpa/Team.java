@@ -20,6 +20,7 @@ public class Team {
         member.setTeam(this);
         members.add(member);
     }
+
     public Long getId() {
         return id;
     }
