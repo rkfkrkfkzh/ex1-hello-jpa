@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Locker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/MemberProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="com.haulmont.jpb.JpaEntity" />
       </list>
     </option>
   </component>
@@ -121,7 +124,7 @@
       <workItem from="1688015410213" duration="7137000" />
       <workItem from="1688350790505" duration="1038000" />
       <workItem from="1688354924494" duration="368000" />
-      <workItem from="1688376751637" duration="4793000" />
+      <workItem from="1688376751637" duration="7841000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1686899278760</created>
@@ -200,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688440278603</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="일대일 매핑 주테이블에 외래키 사용 선호">
+      <created>1688452314725</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688452314725</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +237,7 @@
     <MESSAGE value="단방향 연관관계" />
     <MESSAGE value="양방향 연관관계와 연관관계의 주인 - 기본" />
     <MESSAGE value="일대다 양방향 정리 하지만 다대일 양방향 사용하자" />
-    <option name="LAST_COMMIT_MESSAGE" value="일대다 양방향 정리 하지만 다대일 양방향 사용하자" />
+    <MESSAGE value="일대일 매핑 주테이블에 외래키 사용 선호" />
+    <option name="LAST_COMMIT_MESSAGE" value="일대일 매핑 주테이블에 외래키 사용 선호" />
   </component>
 </project>

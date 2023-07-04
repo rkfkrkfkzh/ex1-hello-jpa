@@ -5,28 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Member {
-
+public class Product {
     @Id
     @GeneratedValue
-    @Column(name = "member_id")
     private Long id;
 
-    @Column(name = "user_name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "team_id", insertable = false, updatable = false)
-    private Team team;
-
-    @OneToOne
-    @JoinColumn(name = "locker_id")
-    private Locker locker;
-
-    //    @ManyToMany
-//    @JoinTable(name = "member_product")
-//    private List<Product> products = new ArrayList<>();
-    @OneToMany(mappedBy = "member")
+    //    @ManyToMany(mappedBy = "products")
+//    private List<Member> members = new ArrayList<>();
+    @OneToMany(mappedBy = "product")
     private List<MemberProduct> memberProducts = new ArrayList<>();
 
     public Long getId() {
