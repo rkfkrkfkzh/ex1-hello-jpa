@@ -3,8 +3,11 @@ package hellojpa;
 import javax.persistence.*;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public class Item {
+//@Inheritance(strategy = InheritanceType.JOINED) // 조인 전략
+@DiscriminatorColumn // 단일테이블전략 사용시 안써도 필수로 적용됨
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE) //단일테이블전략 성능이점
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public abstract class Item {
 
     @Id
     @GeneratedValue
