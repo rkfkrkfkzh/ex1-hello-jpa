@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/MemberProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Locker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Locker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="com.haulmont.jpb.JpaEntity" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,6 +76,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -85,7 +89,7 @@
       <module name="ex1-hello-jpa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hellojpa.*" />
+          <option name="PATTERN" value="jpabook.jpashop.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,7 +128,12 @@
       <workItem from="1688015410213" duration="7137000" />
       <workItem from="1688350790505" duration="1038000" />
       <workItem from="1688354924494" duration="368000" />
-      <workItem from="1688376751637" duration="7841000" />
+      <workItem from="1688376751637" duration="8807000" />
+      <workItem from="1688457416833" duration="81000" />
+      <workItem from="1688457516539" duration="11000" />
+      <workItem from="1688457563858" duration="9000" />
+      <workItem from="1688457627910" duration="117000" />
+      <workItem from="1688472657913" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1686899278760</created>
@@ -210,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688452314725</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="다대다 매핑은 일대다 다대일로 풀어서 사용">
+      <created>1688456453235</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688456453235</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +254,7 @@
     <MESSAGE value="양방향 연관관계와 연관관계의 주인 - 기본" />
     <MESSAGE value="일대다 양방향 정리 하지만 다대일 양방향 사용하자" />
     <MESSAGE value="일대일 매핑 주테이블에 외래키 사용 선호" />
-    <option name="LAST_COMMIT_MESSAGE" value="일대일 매핑 주테이블에 외래키 사용 선호" />
+    <MESSAGE value="다대다 매핑은 일대다 다대일로 풀어서 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="다대다 매핑은 일대다 다대일로 풀어서 사용" />
   </component>
 </project>
