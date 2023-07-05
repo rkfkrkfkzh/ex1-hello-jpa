@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Member {
+public class Member extends BaseEntity {
 
     @Id
     @GeneratedValue
@@ -24,8 +24,8 @@ public class Member {
     private Locker locker;
 
     //    @ManyToMany
-//    @JoinTable(name = "member_product")
 //    private List<Product> products = new ArrayList<>();
+//    @JoinTable(name = "member_product")
     @OneToMany(mappedBy = "member")
     private List<MemberProduct> memberProducts = new ArrayList<>();
 

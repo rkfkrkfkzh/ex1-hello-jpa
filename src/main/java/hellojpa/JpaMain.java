@@ -1,8 +1,11 @@
 
 package hellojpa;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import java.time.LocalDateTime;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -15,22 +18,17 @@ public class JpaMain {
         tx.begin();
         try {
 
-            Movie movie = new Movie();
-            movie.setDirector("AAAA");
-            movie.setActor("BBBB");
-            movie.setName("바람과함께");
-            movie.setPrice(10000);
-
-            em.persist(movie);
+            Member member = new Member();
+            member.setName("aaa");
+            member.setCreatedBy("lim");
+            member.setCreatedDate(LocalDateTime.now());
+            em.persist(member);
 
             em.flush();
             em.clear();
 
 //            Movie findMovie = em.find(Movie.class, movie.getId());
 //            System.out.println("findMovie = " + findMovie);
-
-            Item findItem = em.find(Item.class, movie.getId());
-            System.out.println("findItem = " + findItem);
 
             tx.commit();
         } catch (Exception e) {
