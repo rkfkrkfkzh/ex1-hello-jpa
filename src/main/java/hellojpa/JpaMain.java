@@ -5,7 +5,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import java.time.LocalDateTime;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -18,21 +17,21 @@ public class JpaMain {
         tx.begin();
         try {
 
-            Member member = new Member();
-            member.setName("aaa");
-            member.setCreatedBy("lim");
-            member.setCreatedDate(LocalDateTime.now());
-            em.persist(member);
+            Member member1 = new Member();
+            member1.setName("ABC1");
+            em.persist(member1);
 
             em.flush();
             em.clear();
 
-//            Movie findMovie = em.find(Movie.class, movie.getId());
-//            System.out.println("findMovie = " + findMovie);
-
+            Member reference = em.getReference(Member.class, member1.getId());
+            System.out.println("reference = " + reference.getClass()); //Proxy
+            System.out.println("emf.getPersistenceUnitUtil().isLoaded(reference) = " + emf.getPersistenceUnitUtil().isLoaded(reference));
+            
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
+            e.printStackTrace();
         } finally {
             em.close();
         }

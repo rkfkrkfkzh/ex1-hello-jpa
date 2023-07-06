@@ -34,6 +34,18 @@
 #### Inheritance 계승
 #### strategy 전략
 #### Discriminator 판별기
+***
+### 프록시의 특징
++ 프록시 객체는 처음 사용할 떄 1번만 초기화
++ 프록시 객체를 초기화 할 때, 프록시 객체가 실제 엔티티로 바뀌는 것은 아니다. 초기화되면 프록시 객체를 통해서 실제 엔티티에 접근 가능
++ 프록시 개체는 원본 엔티티를 상속받음, 따라서 타입 체크시 주의해야함 (==비교 실패, 대신 instance of 사용)
++ 영속성 컨텍스트에 찾는 엔티티가 이미 있으면 em.getReference()를 호출해도 실제 엔티티 반환
++ 영속성 컨텍스트의 도움을 받을 수 없는 준영속 상태일 때, 프록시를 초기화할때 문제 발생(하이버네이트는 org.hibernate.LazyInitializationException 예외 터짐)
+***
+### 프록시 확인
++ emf.getPersistenceUnitUtil().isLoaded(); 프록시 인스턴스의 초기화 여부 확인
++ Hibernate.initialize(reference); 프록시 강제 초기화(JPA 내부에서는 강제호출로 초기화)
+
 
 
 
