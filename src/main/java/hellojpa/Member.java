@@ -13,8 +13,8 @@ public class Member extends BaseEntity {
     @Column(name = "user_name")
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "team_id", insertable = false, updatable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
     private Team team;
 
     public Long getId() {
