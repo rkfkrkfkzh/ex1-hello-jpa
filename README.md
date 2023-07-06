@@ -45,6 +45,17 @@
 ### 프록시 확인
 + emf.getPersistenceUnitUtil().isLoaded(); 프록시 인스턴스의 초기화 여부 확인
 + Hibernate.initialize(reference); 프록시 강제 초기화(JPA 내부에서는 강제호출로 초기화)
+***
+### 영속성 전이 : CASCADE
++ 특정 엔티티를 영속 상태로 만들때 연관된 엔티티도 함께 영속상태로 만들고 싶을때
++ ex) Parent Entity를 저장할 때 Child Entity도 함꼐 저장
++ @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+### 영속성 전이 + 고아객체, 생명주기
++ cascade = CascadeType.ALL, orphanRemoval = true
++ 스스로 생명주기를 관리하는 Entity는 em.persist()로 영속화, em.remove()로 제거
++ 두 옵션을 모두 활성화 하면 부모 Entity를 통해 자식의 생명주기를 관리할 수 있다.
++ 도메인 주도 설계(DDD)의 Aggregate Root개념을 구현할 때 유용
+***
 
 
 
