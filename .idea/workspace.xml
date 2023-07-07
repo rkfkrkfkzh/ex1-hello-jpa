@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="588b0f52-1f80-4cf9-a02a-c0d960be8a65" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/AddressEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Period.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Period.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="com.haulmont.jpb.JpaEntity" />
         <option value="Class" />
+        <option value="com.haulmont.jpb.JpaEntity" />
       </list>
     </option>
   </component>
@@ -131,7 +132,7 @@
       <workItem from="1688457516539" duration="11000" />
       <workItem from="1688457563858" duration="9000" />
       <workItem from="1688457627910" duration="117000" />
-      <workItem from="1688472657913" duration="32809000" />
+      <workItem from="1688472657913" duration="40522000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 설정">
       <created>1686899278760</created>
@@ -280,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688728835284</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="값 타입과 불변 객체">
+      <created>1688732559423</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1688732559423</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +324,7 @@
     <MESSAGE value="즉시 로딩과 지연 로딩" />
     <MESSAGE value="영속성 전이(CASCADE)와 고아객체" />
     <MESSAGE value="임베디드 타입" />
-    <option name="LAST_COMMIT_MESSAGE" value="임베디드 타입" />
+    <MESSAGE value="값 타입과 불변 객체" />
+    <option name="LAST_COMMIT_MESSAGE" value="값 타입과 불변 객체" />
   </component>
 </project>
