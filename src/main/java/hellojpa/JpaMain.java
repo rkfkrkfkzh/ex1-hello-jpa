@@ -1,10 +1,12 @@
 
 package hellojpa;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import org.hibernate.Criteria;
+
+import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.util.List;
 import java.util.Set;
 
@@ -18,38 +20,23 @@ public class JpaMain {
 
         tx.begin();
         try {
+
             Member member = new Member();
-            member.setName("AAA");
-            member.setHomeAddress(new Address("homeCity","street","10000"));
-
-            member.getFavoriteFoods().add("치킨");
-            member.getFavoriteFoods().add("피자");
-            member.getFavoriteFoods().add("햄버거");
-
-            System.out.println("=============");
-            member.getAddressHistory().add(new AddressEntity("yo1","street","10000"));
-            member.getAddressHistory().add(new AddressEntity("yo2","street","10000"));
-
+            member.setName("lim");
             em.persist(member);
 
+            //flush -> commit, query
             em.flush();
-            em.clear();
+            //dbconn.executeQuery("selet * from member"); // 결과 0
 
-            System.out.println("=========start==========");
-            Member findMember = em.find(Member.class, member.getId());
-
-//            Address a = findMember.getHomeAddress();
-//            findMember.setHomeAddress(new Address("NENENW",a.getStreet(),a.getZipcode()));
-//
-//            findMember.getFavoriteFoods().remove("치킨");
-//            findMember.getFavoriteFoods().add("한식");
-
-//            findMember.getAddressHistory().remove(new AddressEntity("yo1", "street", "10000"));
-//            findMember.getAddressHistory().add(new AddressEntity("yzzzz", "street", "10000"));
-
-
-
+            System.out.println("===============");
+            List<Member> resultList = em.createNativeQuery("select member_id, city,street,zipcode,user_name from member", Member.class).getResultList();
+            for (Member member1 : resultList) {
+                System.out.println(member1);
+            }
+            System.out.println("==================");
             tx.commit();
+
         } catch (Exception e) {
             tx.rollback();
             e.printStackTrace();
